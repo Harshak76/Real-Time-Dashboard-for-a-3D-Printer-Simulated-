@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Printer Dashboard</h1>
+        <div class="dashboard">
+            <div class="status-box">
+                <h2>Status: <span id="printer-status">Loading...</span></h2>
+            </div>
+            <div class="temp-box">
+                <h3>Extruder Temperature: <span id="extruder-temp">--</span>°C</h3>
+                <h3>Heater Bed Temperature: <span id="heater-bed-temp">--</span>°C</h3>
+            </div>
+            <div class="progress-box">
+                <h3>Print Progress</h3>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <p id="progress-percent">0%</p>
+            </div>
+        </div>
+        
+<canvas id="tempChart"></canvas>
+
+    </div>
+    <head>
+        ...
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    
+    <script src="script.js"></script>
+</body>
+</html>
